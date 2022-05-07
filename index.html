@@ -6,32 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script>
-      google.charts.load('current', {packages: ['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-  
-      function drawChart() {
-        // Define the chart to be drawn.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Element');
-        data.addColumn('number', 'Percentage');
-        data.addRows([
-          ['Nitrogen', 0.78],
-          ['Oxygen', 0.21],
-          ['Other', 0.01]
-        ]);
-  
-        // Instantiate and draw the chart.
-        var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-        chart.draw(data, null);
-      }
-    </script>
   </head>
   <body>
     <!-- Identify where the chart should be drawn. -->
     <p>Hello world!!</p>
     <p>This is my first web page.</p>
-    <div id="myPieChart"/>
+    
+    <script src="js/sc_12.js"></script>
   </body>
 </html>
